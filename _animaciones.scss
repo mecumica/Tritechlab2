@@ -1,0 +1,24 @@
+@-webkit-keyframes giro3d{
+	40%{
+		-webkit-transform: perspective(800px)
+		                   translateZ(120px)
+		                   rotateY(170deg);
+		                   
+	}
+		50%{
+		-webkit-transform: perspective(800px)
+		                   translateZ(120px)
+		                   rotateY(190deg);
+		                   
+	}
+		80%{
+		-webkit-transform: perspective(800px)
+		                   translateZ(0px)
+		                   rotateY(360deg);
+		                   
+	}
+		100%{
+		-webkit-transform: perspective(800px)
+		                   rotateY(360deg);
+	}
+}

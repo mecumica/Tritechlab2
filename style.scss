@@ -1,0 +1,634 @@
+@import"_variables";
+@import"_animaciones";
+@import"_empresa";
+@import"contacto";
+
+
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    color:$color_3;
+    font-family: $font_1;
+    list-style: none;
+}
+.navbar{
+    background-color: $color_t1;
+    a{
+        color: $color_3;
+        text-transform: uppercase;
+        font-family: $font_1;
+        font-size: $small;
+        font-weight: bold;
+    }
+
+}
+
+.section-1{
+   background-image: url(img/banner.jpg);
+   background-position: center;
+   background-size: cover;
+   height: 900px;
+   width: 100%;
+   display: flex;
+   align-items:  flex-end;
+   justify-content: center;
+
+   .texto-s1{
+   text-align: center;
+   background-color:$color_t4;
+   padding: 30px;
+   border-radius: 10px;
+   height: 40%;
+  
+   width: 100%;
+    h2{
+        font-size: $large;
+        font-weight: bold;
+        text-transform: uppercase;
+       
+    }
+    h3{
+        font-size: $medium;
+        font-weight: 300;
+        text-transform: uppercase;
+        text-shadow: 1px 2px 5px black;
+
+    }
+    .btn-s1{
+        margin-top: 20px;
+        background-color: $color_2;
+        text-align: center;
+        height: 50px;
+        width: 200px;
+        box-shadow: 1px 2px 5px black;
+        border-radius: 10px;
+        border: none;
+    }
+    span{
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    .btn-s1:hover{
+        background-color: $color_t2;
+    }
+   }
+  
+}
+.section-2{
+    .formas {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 100px;
+
+        .cuadrado-1 {
+            height: 400px;
+            width: 400px;
+            border: solid $color_1 8px;
+
+            .circulo-1 {
+                background-image: url(./img/impresion3d.jpg);
+                border-radius: 50%;
+                height: 400px;
+                width: 400px;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: relative;
+                left: 50px;
+                top: 20px;
+            }
+        }
+
+        .cuadrado-2 {
+            height: 400px;
+            width: 400px;
+            background-color: $color_1;
+
+            .circulo-2 {
+                background-image: url(./img/diseño\ y\ desarrollo.jpg);
+                border-radius: 50%;
+                height: 400px;
+                width: 400px;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: relative;
+                left: 50px;
+                top: 20px;
+            }
+        }
+    }
+  
+        .texto-s2 {
+            height: 100px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: nowrap;
+            align-items: center;
+            margin-top: 50px;
+            text-align: center;
+        
+            .box-text {
+        
+                h2 {
+                    color: black;
+                    font-family: $font_1;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    font-size: $medium;
+                }
+        
+                p {
+                    color: black;
+                    font-family: $font_1;
+                }
+            }
+        
+        }
+    }
+    .imagen-fondo {
+        background-image: url(./img/article_amscover.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        height: 80vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+    
+    .titulo-imagen {
+        color: $color_3;
+        text-align: center;
+        padding-top: 2em;
+        font-weight: 600;
+        font-size: $large;
+        text-shadow: black 1px 2px 5px;
+    
+    } 
+    .section-4{
+        height: 500px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 15px;
+
+
+        .card-body{
+            height: 400px;
+            width: 400px;
+            background-color: $color_1;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+     
+            h5{
+                font-size: $medium;
+                font-weight: 800;
+                text-transform: uppercase;
+            }
+        }
+    } 
+    .body-1:hover{
+        animation-duration: 3s;
+        animation-name: giro3d;
+        animation-iteration-count: infinite;
+        .card-text{
+        display: none;
+    }
+    background-image: url(img/prototipos.jpg);
+    background-size: cover;
+    background-position: center;
+    }
+    .body-2:hover{
+        animation-duration: 3s;
+        animation-name: giro3d;
+        animation-iteration-count: infinite;
+        .card-text{
+        display: none;
+         }
+    background-image: url(img/produccion\ en\ serie.jpg);
+    background-size: cover;
+    background-position: center;
+    }
+    .body-3:hover{
+        animation-duration: 3s;
+        animation-name: giro3d;
+        animation-iteration-count: infinite;
+        .card-text{
+        display: none;
+    }
+    background-image: url(img/cocreacion.jpg);
+    background-size: cover;
+    background-position: center;
+    }
+    .body-4:hover{
+        animation-duration: 3s;
+        animation-name: giro3d;
+        animation-iteration-count: infinite;
+        background-image: url(img/soluciones\ integrales\ \(2\).jpg);
+        background-position: center;
+        background-size: cover;
+    .card-text{
+        display: none;
+        }
+    }
+    .section-5{
+        background-color: $color_5;
+        height: auto;
+        width: 100%;
+        padding: 20px;
+        .contacto-texto{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            h2{
+                font-size: $large;
+            }
+            ul{
+                text-align: center;
+            }
+        }
+        button{
+            background-color: $color_4;
+            width: 30%;
+            height: 50px;
+        }
+
+    }
+    footer {
+        background-color: $color_4;
+        width:100%;
+        padding: 20px;
+        height: auto;
+        display: grid; 
+        grid-template-columns: 0.9fr 1.1fr 1fr; 
+        grid-template-rows: 0.7fr 3.4fr 0.6fr 0.3fr; 
+        gap: 3px 0px; 
+        grid-template-areas: 
+          "logo-footer . ."
+          "link1-footer link2-footer direccion-footer"
+          "social-footer social-footer social-footer"
+          "copy-footer copy-footer ."; 
+      
+      .logo-footer { 
+        grid-area: logo-footer;
+     }
+      .link1-footer { 
+        grid-area: link1-footer;
+     }
+      .link2-footer { 
+        grid-area: link2-footer; 
+    }
+      .direccion-footer { 
+        grid-area: direccion-footer
+     }
+      .copy-footer { 
+        grid-area: copy-footer;
+     }
+      .social-footer { 
+        grid-area: social-footer;
+     }
+     i{
+        font-size: 50px;
+       margin-left: 15px;
+     }
+      
+    }
+    @media only screen and (min-width:575px) and (max-width:992px) {
+        /*inicio index*/
+        .section-1{
+         height: 400px;
+         width: 100%;
+      
+        .texto-s1{
+         padding: 0%;
+         width: 100%;
+         border-radius: 0%;
+          h2{
+              font-size:30px;
+          }
+          h3{
+              font-size: $small;
+          }
+          .btn-s1{
+              margin-top: 15px;
+              height: 50px;
+              width: 200px;
+              border-radius: 10px;
+          }
+       }
+     }
+      .section-2{
+         .formas {
+             margin-top:50px;
+     
+             .cuadrado-1 {
+                 height: 150px;
+                 width: 150px;
+     
+                 .circulo-1 {
+                     height: 150px;
+                     width: 150px;
+                    left: 30px;
+                     top: 20px;
+                 }
+              }
+     
+             .cuadrado-2 {
+                 height: 150px;
+                 width:150px;
+     
+                 .circulo-2 {
+                     height: 150px;
+                     width: 150px;
+                     left: 30px;
+                     top: 20px;
+                 }
+             }
+         }
+         .texto-s2 {
+             height: 100px;
+             margin-top: 50px;
+          .box-text {
+         
+                 h2 {
+                     font-size: 20px;
+                 }
+         
+                 p {
+                font-size: 16px;
+                 }
+             }
+         
+         }
+     }
+     .section-4{
+         height: 500px;
+         width: 100%;
+         display: grid;
+         grid-template-columns: repeat(2,3fr);
+         grid-template-rows: repeat(2, 3fr);
+         align-items: center;
+     justify-items: center;
+     
+     
+         .card-body{
+             height: 200px;
+             width: 200px;
+         
+          
+             
+      
+             h5{
+                 font-size:22px;
+            
+             }
+             p{
+                display: none;
+             }
+         }
+     
+     .body-1:hover{
+        animation-duration: 3s;
+        animation-name: giro3d;
+        animation-iteration-count: infinite;
+        .card-text{
+        display: none;
+    }
+    background-image: url(img/prototipos.jpg);
+    background-size: cover;
+    background-position: center;
+    }
+    .body-2:hover{
+        animation-duration: 3s;
+        animation-name: giro3d;
+        animation-iteration-count: infinite;
+        .card-text{
+        display: none;
+         }
+    background-image: url(img/produccion\ en\ serie.jpg);
+    background-size: cover;
+    background-position: center;
+    }
+    .body-3:hover{
+        animation-duration: 3s;
+        animation-name: giro3d;
+        animation-iteration-count: infinite;
+        .card-text{
+        display: none;
+    }
+    background-image: url(img/cocreacion.jpg);
+    background-size: cover;
+    background-position: center;
+    }
+    .body-4:hover{
+        animation-duration: 3s;
+        animation-name: giro3d;
+        animation-iteration-count: infinite;
+        background-image: url(img/soluciones\ integrales\ \(2\).jpg);
+        background-position: center;
+        background-size: cover;
+    .card-text{
+        display: none;
+        }
+    }
+     }
+     footer{
+        h2{
+            font-size: 22px;
+            font-weight: bold;
+        }
+        a{
+            font-size: 16px;
+        }
+        h3{
+            font-size: 20px;
+        }
+     }
+
+}
+/* Teléfonos */
+@media only screen and (max-width: 575px){
+    .section-1{
+        height: 600px;
+        width: 100%;
+     
+     
+        .texto-s1{
+        height:300px;
+        margin-bottom: 0px;
+       
+        width: 100%;
+         h2{
+             font-size: 40px;
+             font-weight: bold;
+             text-transform: uppercase;
+            
+         }
+        }
+    }
+  
+     .section-2{
+        .formas {
+            margin-top:50px;
+    
+            .cuadrado-1 {
+                height: 120px;
+                width: 150px;
+    
+                .circulo-1 {
+                    height: 120px;
+                    width: 120px;
+                   left: 20px;
+                    top: 20px;
+                }
+             }
+    
+            .cuadrado-2 {
+                height: 120px;
+                width:120px;
+    
+                .circulo-2 {
+                    height: 120px;
+                    width: 120px;
+                    left: 20px;
+                    top: 20px;
+                }
+            }
+        }
+        .texto-s2 {
+            height: 120px;
+            margin-top: 10px;
+         .box-text {
+        
+                h2 {
+                    font-size: 18px;
+                }
+        
+                p {
+               display: none;
+                }
+            }
+        
+        }
+    }
+    .section-4{
+        height: 500px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2,3fr);
+        grid-template-rows: repeat(2, 3fr);
+        align-items: center;
+        justify-items: center;
+    
+    
+        .card-body{
+            height: 150px;
+            width: 150px;
+        
+         
+            
+     
+            h5{
+                font-size:22px;
+           
+            }
+            p{
+               display: none;
+            }
+        }
+    
+    .body-1:hover{
+       animation-duration: 3s;
+       animation-name: giro3d;
+       animation-iteration-count: infinite;
+       .card-text{
+       display: none;
+   }
+   background-image: url(img/prototipos.jpg);
+   background-size: cover;
+   background-position: center;
+   }
+   .body-2:hover{
+       animation-duration: 3s;
+       animation-name: giro3d;
+       animation-iteration-count: infinite;
+       .card-text{
+       display: none;
+        }
+   background-image: url(img/produccion\ en\ serie.jpg);
+   background-size: cover;
+   background-position: center;
+   }
+   .body-3:hover{
+       animation-duration: 3s;
+       animation-name: giro3d;
+       animation-iteration-count: infinite;
+       .card-text{
+       display: none;
+   }
+   background-image: url(img/cocreacion.jpg);
+   background-size: cover;
+   background-position: center;
+   }
+   .body-4:hover{
+       animation-duration: 3s;
+       animation-name: giro3d;
+       animation-iteration-count: infinite;
+       background-image: url(img/soluciones\ integrales\ \(2\).jpg);
+       background-position: center;
+       background-size: cover;
+   .card-text{
+       display: none;
+       }
+   }
+    }
+    .section-5{
+        .contacto-texto{
+       
+            h2{
+                font-size: $medium;
+                font-weight: bold;
+            }
+            ul{
+                text-align: center;
+            }
+        }
+        button{
+            background-color: $color_4;
+            width: 50%;
+            height: 50px;
+        }
+    }
+    footer{
+       h2{
+           font-size: 20px;
+           font-weight: bold;
+           margin-left: 5px;
+       }
+       a{
+           font-size: 16px;
+           margin-left: 5px;
+       }
+       h3{
+           font-size: 18px;
+           margin-left: 5px;
+       }
+    }
+
+}
+
