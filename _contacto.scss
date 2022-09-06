@@ -1,0 +1,178 @@
+
+  .section1-contacto{
+    background-image: url(./img/Cliente.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+   
+    .cartel-s1c{
+        width: 30%;
+        height: 100%;
+        background-color: $color_t5;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 20px;
+
+        h2{
+            font-size: $large;
+            font-weight: bold;
+            text-transform: uppercase;
+
+        }
+        P{
+            font-size: $medium;
+            font-weight: bold;
+            text-transform: uppercase;
+
+        }
+    }
+
+}
+  .section3-contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $color_1;
+  }
+  
+
+
+  *:focus {
+    outline: none;
+  }
+  fieldset{
+    background-color:$color_t1;
+    border-radius: 20px;
+    height: auto;
+    width:100%;
+    margin: 20px;
+    box-shadow: 2px 3px 5px black;
+  }
+  label{
+    color: #000000;
+  }
+  input{
+    height: auto;
+    width: 300px;
+  }
+  
+  .formulario:first-child div {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+ 
+  }
+  
+  .formulario:first-child div fieldset div {
+    margin-top: 10px;
+   color: #000000;
+  }
+  
+  .formulario:first-child div fieldset input, .formulario:first-child div fieldset textarea {
+    border: 1px #000000 solid;
+    border-radius: 5px;
+    padding: 6px;
+    background: rgba(0, 0, 0, 0.835);
+    color: #00bcd4;
+  }
+  
+  .formulario:first-child div fieldset input:focus, .formulario:first-child div fieldset textarea:focus {
+    background: white;
+    color: black;
+  }
+  
+  .formulario:first-child div fieldset .submit {
+    text-decoration: none;
+    padding: 15px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #080808;
+    background-color: #00bbd419;
+    border-radius: 10px;
+    border: 2px solid #2196F3;
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    margin: 5px;
+    width: 50%;
+  }
+  
+  .formulario:first-child div fieldset .submit:hover {
+    color: #000000;
+    background-color: #ffffff;
+    cursor:pointer;
+  }
+  .imagen-fondo-contacto {
+    background-image: url(./img/granja.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+
+
+@media only screen and (min-width:575px) and (max-width:992px) {
+  .section1-contacto{
+
+   
+    .cartel-s1c{
+        width: 70%;
+  
+}
+  }
+}
+
+@media only screen and (max-width: 575px){
+
+  .section1-contacto{
+    height: 200px;
+  
+
+   
+    .cartel-s1c{
+        width: 70%;
+        h2{
+          margin-top: 30px;
+          font-size: $medium;
+       
+
+      }
+      P{
+          font-size: $small;
+       
+
+      }
+
+  
+}
+
+  }
+  .section3-contacto{
+    height: auto;
+    padding: 20px;
+  fieldset{
+    margin: 5px;
+    padding: 10px;
+   
+  }
+  label{
+    color: #000000;
+  }
+  input{
+    height: auto;
+    width: 250px;
+  }
+}
+}
+
+
+

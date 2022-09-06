@@ -52,58 +52,41 @@
             </div>
         </nav>
     </header>
-    <section class="section1-empresas">
-        <div class="cartel-s1e">
-            <h2>Empresa</h2>
-            <p>en tritecchlab te contamos acerca de nosotros </p>
+    <section class="section1-contacto">
+        <div class="cartel-s1c">
+            <h2>Contacto</h2>
+            <p>en tritechlab cotizamso tus ideas </p>
         </div>
     </section>
     <section class="section3-contacto">
-        <div class="card">
-            <h2>Contact Us</h2>
-            <div class="row">
-                <div class="col">
-                    <div class="form-group">
-                        <label>First Name</label>
-                        <input type="text">
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="form-group">
-                        <label>Surname</label>
-                        <input type="text">
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="form-group">
-                        <label>Email</label>
-                        <input type="text">
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="form-group">
-                        <label>Phone</label>
-                        <input type="text">
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="form-group">
-                        <label>Message</label>
-                        <textarea></textarea>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <input type="submit" value="Submit">
-                </div>
+        <form class="formulario" action="#" id="formulario" >
+            <div>
+                <fieldset>
+                    <h2>Contacto</h2>
+                    <span class="required_notification">Ingresa tus datos y nos pondremos en contacto a la brevedad</span></br>
+                        <div>
+                            <label for="nombre">Nombre:</label></br>
+                            <input type="text" name="nombre" placeholder="Nombre" required /></br>
+                        </div>
+                        <div>
+                            <label for="email">Email:</label></br>
+                            <input type="email" name="email" placeholder="example@email.com" required /></br>
+                        </div>
+                        <div>
+                            <label for="website">Empresa</label></br>
+                            <input type="url" name="website" placeholder="https://sercodigo.com" required pattern="(http|https)://.+" /></br>
+                        </div>
+                        <div>
+                            <label for="message">Mensaje:</label></br>
+                            <textarea name="message" cols="40" rows="6" required></textarea></br>
+                        </div>
+                        <button class="submit" type="submit">Enviar</button></br>
+                </fieldset>
             </div>
-        </div>
+        </form>
+       
     </section>
-    <div class="imagen-fondo">
+    <div class="imagen-fondo-contacto">
     </div>
     <section class="section4-empresas">
         <h2>Materializa tus ideas en TRITECHLAB</h2>
@@ -162,9 +145,10 @@
             <small>&copy; 2022 <b>Tritechlab - Todos los derechos reservados </b></small>
         </div>
         <div class="social-footer">
-            <i class="fa-brands fa-instagram">
-                <a href="#"></a>
-            </i>
+             <a href="https://www.instagram.com/tritech.lab/">
+                <i class="fa-brands fa-instagram">
+                </i>
+            </a>
             <i class="fa-regular fa-envelope">
                 <a href="#"></a>
             </i>

@@ -1,7 +1,10 @@
 @import"_variables";
 @import"_animaciones";
 @import"_empresa";
-@import"contacto";
+@import"_contacto";
+@import"_casos";
+@import"_impresion3d";
+@import"diseñoydesarrollo";
 
 
 
@@ -157,7 +160,7 @@
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
-        height: 80vh;
+        height: 50vh;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -261,14 +264,17 @@
             ul{
                 text-align: center;
             }
-        }
         button{
             background-color: $color_4;
-            width: 30%;
+            width: 200px;
             height: 50px;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 2px 2px 5px black;
         }
 
     }
+}
     footer {
         background-color: $color_4;
         width:100%;
@@ -607,13 +613,14 @@
             ul{
                 text-align: center;
             }
-        }
+    
         button{
             background-color: $color_4;
-            width: 50%;
+            width:150px;
             height: 50px;
         }
     }
+}
     footer{
        h2{
            font-size: 20px;
